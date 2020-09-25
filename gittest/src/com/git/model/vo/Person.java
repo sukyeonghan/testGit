@@ -12,6 +12,7 @@ public class Person {
 	private String address;
 	private String phone;
 	private String email; 
+	private String test;
 	
 	public Person() {
 		// TODO Auto-generated constructor stub
@@ -47,6 +48,14 @@ public class Person {
 
 	public void setWeight(double weight) {
 		this.weight = weight;
+	}
+	
+	public String getTest() {
+		return test;
+	}
+
+	public void setTest(String test) {
+		this.test = test;
 	}
 
 	@Override
