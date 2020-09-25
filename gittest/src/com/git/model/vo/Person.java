@@ -11,9 +11,24 @@ public class Person {
 	private String address;
 	private String phone;
 	private String email;
+	private String intro;
 	
 	public Person() {
 		// TODO Auto-generated constructor stub
+	}
+
+	public Person(String name, int age, double height, double weight, String[] hobby, String address, String phone,
+			String email, String intro) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.height = height;
+		this.weight = weight;
+		this.hobby = hobby;
+		this.address = address;
+		this.phone = phone;
+		this.email = email;
+		this.intro = intro;
 	}
 
 	public String getName() {
@@ -48,10 +63,21 @@ public class Person {
 		this.weight = weight;
 	}
 
+	public String getIntro() {
+		return intro;
+	}
+
+	public void setIntro(String intro) {
+		this.intro = intro;
+	}
+
 	@Override
 	public String toString() {
 		return "Person [name=" + name + ", age=" + age + ", height=" + height + ", weight=" + weight + ", hobby="
-				+ Arrays.toString(hobby) + ", address=" + address + "]";
+				+ Arrays.toString(hobby) + ", address=" + address + ", phone=" + phone + ", email=" + email + ", intro="
+				+ intro + "]";
 	}
+
+
 	
 }
